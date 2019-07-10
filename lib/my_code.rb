@@ -1,4 +1,6 @@
 # Your Code Here
+ require 'pry'
+ 
  def map(array)
    counter = 0
    new_array = []
@@ -14,6 +16,7 @@
    answer = start
    while counter < array.length
      answer = yield(array[counter], answer)
+     binding.pry
      counter += 1
    end
 if answer 
