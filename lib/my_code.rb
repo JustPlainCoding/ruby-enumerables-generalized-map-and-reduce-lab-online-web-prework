@@ -16,7 +16,6 @@
    answer = start
    while counter < array.length
      answer = yield(array[counter], answer)
-     binding.pry
      counter += 1
    end
 if answer 
